@@ -16,5 +16,15 @@ export class ItemsService {
             qty: 20,
             description: "this is item 67"
         }
-    ]
+    ];
+
+    //creating a function to get an array of items
+    findAll(): Item[]{
+        return this.items;
+    }
+
+    //function to find an item with a particular id
+    findOne(id): Item{
+        return this.items.find(item=>item.id===id);
+    }
 }
