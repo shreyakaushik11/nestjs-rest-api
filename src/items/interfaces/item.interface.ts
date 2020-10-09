@@ -1,4 +1,4 @@
-export interface Item{
+export interface Item {
     //question mark means optional
     id?: string;
     name: string;
